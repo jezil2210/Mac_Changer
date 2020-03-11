@@ -10,13 +10,17 @@
   <li>re</li>
 </ul>
 
+<ul>
+
+<li>
 <h3>Subprocess</h3>
 
 <p>The module is used to perform the commands from the progam, so with the code lines below you can perform commands on the terminal.</p>
 <p>subprocess.call(["sudo", "ifconfig", interface,  "down"])</p>
 <p>subprocess.call(["sudo", "ifconfig", interface,  "hw", "ether", new_mac])</p>
 <p>subprocess.call(["sudo", "ifconfig", interface, "up"])</p>
-
+</li>
+<li>
 <h3>Optparse</h3>
 
 <p>The module allows users to specify options in the conventional GNU/POSIX syntax, and additionally generates usage and help messages</p>
@@ -25,7 +29,8 @@
 <p>parser.add_option("-m","--mac",dest="mac",help="the new MAC address")</p>
 <p>(options, arguments) = parser.parse_args()</p>
 <p>Therefore you can now use like that: </p>
-
+</li>
+<li>
 <h3>re</h3>
 
 <p>This module provides regular expression matching operations, you can filter the content by looking for the MAC address in the result of the command "ifconfig"</p>
@@ -40,7 +45,8 @@
 <p>else:</p>
 <p>print("Couldn't read the MAC address")</p>
 
-
+</li>
+</ul>
 
 
 

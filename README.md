@@ -30,7 +30,7 @@
 
 <p>This module provides regular expression matching operations, you can filter the content by looking for the MAC address in the result of the command "ifconfig"</p>
 
-<p>The method check_output return de content of "ifconfig", and "re.search" look for somenthing that have a sequence of alpha numerics using "\w"</p>
+<p>The method check_output return the content of "ifconfig", and "re.search" look for somenthing that have a sequence of alpha numerics, using "\w" like argument in the method search</p>
 
 <p>ifconfig_result = subprocess.check_output(["sudo", "ifconfig", interface])</p>
 <p>mac_search_result = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig_result)</p>

@@ -22,14 +22,13 @@ subprocess.call(["sudo", "ifconfig", interface, "up"])
 
 <h3>Optparse</h3>
 
-<p>The module allows users to specify options in the conventional GNU/POSIX syntax, and additionally generates usage and help messages</p>
+<p>The module allows users to specify options in the conventional GNU/POSIX syntax, and additionally generates usage and help messages. Therefore you can now use like that: </p>
 
 ```python
 parser = optparse.OptionParser()
 parser.add_option("-i","--interface",dest="interface", help="interface to change the MAC")
 parser.add_option("-m","--mac",dest="mac",help="the new MAC address")
 (options, arguments) = parser.parse_args()
-Therefore you can now use like that: 
 ```
 
 <h3>re</h3>
